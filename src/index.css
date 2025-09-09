@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+:root, .theme-dark {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+  --bg: #222222;
+  --text: #ffffff;
+  --primary: #2563eb;
+  --secondary: #f59e42;
+  --accent: #e11d48;
+}
+
+
+.theme-light {
+  --bg: #ffffff;
+  --text: #222222;
+  --primary: #2563eb;
+  --secondary: #f59e42;
+  --accent: #e11d48;
+}
+
+
+.theme-dark {
+  --bg: #222222;
+  --text: #ffffff;
+  --primary: #2563eb;
+  --secondary: #f59e42;
+  --accent: #e11d48;
+}
+
+
+html, body, #root { 
+  height: 100%;
+  margin-top: 4rem;
+ }
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg);
+  color: var(--text);
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+a {
+font-weight: 200;
+color: var(--primary);
+text-decoration: none;
+}
+a:hover { 
+  opacity: 0.9;
+  color: var(--primary);
+ }
+
+
+@media (prefers-color-scheme: light) {
+  
+  .theme-light {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@media (max-width: 700px) {
+  html, body, #root { 
+  height: 100%;
+  margin-top: 3rem;
+ }
+}
+
