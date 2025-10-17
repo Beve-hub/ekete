@@ -2,7 +2,7 @@ import {RightIntro} from './RightIntro';
 
 const RightHome = () => {
     return (
-        <div className='mb-8'>
+        <div>
             <RightIntro />
         </div>
     )
