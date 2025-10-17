@@ -13,7 +13,7 @@ const Home = () => {
 
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-10">
       
-        <section className="grid gap-10 md:grid-cols-5">
+        <section className="grid md:grid-cols-5">
           <div className="md:col-span-3">
             <LeftHome />
           </div>
@@ -22,7 +22,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="grid gap-10 md:grid-cols-5">
+        <section className="grid md:grid-cols-5">
           <div className="md:col-span-3">
             <div>
               <h1 className="border-b py-4 text-xl sm:text-2xl">Articles</h1>
