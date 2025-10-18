@@ -17,13 +17,13 @@ export const ArticlesCard = ({ limit }: { limit?: number }) => {
                 const firstSection = article.sections[0];
                 return (
                     <Link to={`/articles/${article.id}`} key={article.id} className="block rounded shadow hover:shadow-lg p-4">
-                        <div className="flex gap-4 items-start border-b pb-2">
+                        <div className="flex gap-2 items-center border-b pb-2">
                             {firstSection.image && (
-                                <img src={firstSection.image} alt={firstSection.heading} className="w-[5rem] h-[5rem] mb-2" />
+                                <img src={firstSection.image} alt={firstSection.heading} className="w-[15rem] h-[6rem] mb-2" />
                             )}
                             <div>
-                                <h2 className="text-lg font-bold mb-2 hover:underline hover:decoration-[var(--primary)]">{article.title}</h2>
-                                <p className="text-sm mb-2">"{firstSection.content}"</p>
+                                <h2 className="text-lg font-bold hover:underline hover:decoration-[var(--primary)]">{article.title}</h2>
+                                <p className="text-sm ">"{firstSection.content}"</p>
                                 <p className="text-xs text-gray-500">{article.date}</p>
                             </div>
                         </div>

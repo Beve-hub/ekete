@@ -33,7 +33,7 @@ export const RightIntro = () => {
             </div>
 
             <div>
-                <p>NewsLetter:</p>
+                <p className="mb-2">NewsLetter:</p>
                 <div className="flex border border-[var(--primary)] rounded-sm px-2 w-[18rem]">
                     <input type="email" placeholder="Enter your email" className="flex-1 outline-none" />
                     <button className="bg-[var(--primary)] text-white rounded-sm px-3 py-2 ml-1">Subscribe</button>

@@ -48,7 +48,7 @@ export const Home: React.FC = () => {
     <div className="min-h-screen flex flex-col">
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
         {/* Hero Section */}
-        <section className="grid md:grid-cols-7 gap-6">
+        <section className="grid md:grid-cols-7 gap-4 mb-6">
           <div className="md:col-span-4">
             <LeftHome />
           </div>
